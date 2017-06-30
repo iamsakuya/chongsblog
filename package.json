@@ -4,7 +4,8 @@
   "description": "Personal blog for recording notes and thoughts.",
   "main": "app.js",
   "scripts": {
-    "test": "NODE_ENV=test nodemon --exec 'mocha --recursive -R min'"
+    "test": "NODE_ENV=test nodemon --exec 'mocha --recursive -R min'", 
+    "start": "node app.js" 
   },
   "keywords": [
     "blog",
