@@ -1,0 +1,40 @@
+<% include ../partials/top %>
+
+<!-- blog create form section -->
+<section id="new-blog">
+	<!-- flash messages -->
+	<% if (error_msg && error_msg.length > 0) { %>
+	<div class="alert alert-danger" role="alert"><%= error_msg %></div>
+	<% } %>
+	<% if (success_msg && success_msg.length > 0) { %>
+	<div class="alert alert-success" role="alert"><%= success_msg %></div>
+	<% } %>
+	
+	<form id="new-blog-form" action="/blogs" method="post">
+		<div id="new-blog-heading">
+			<h1>Create new blog</h1>
+		</div>
+
+		<div id="new-blog-title">
+			<input type="text" name="title" class="form-control" placeholder="Title" required>
+		</div>
+
+		<div id="new-blog-thumbnail">
+			<input type="text" name="thumbnail" class="form-control" placeholder="thumbnail image src">
+		</div>
+
+		<div id="new-blog-body">
+			<textarea name="body" class="form-control" rows="20" required></textarea>
+		</div>
+
+		<div id="new-blog-tags">
+			<input type="text" name="tags" class="form-control" placeholder="tags, seperated by ','">
+		</div>
+
+		<div id="new-blog-submit">
+			<button class="btn" type="submit">Submit</button>
+		</div>
+	</form>
+</section>
+
+<% include ../partials/bottom %>

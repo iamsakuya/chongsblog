@@ -1,0 +1,40 @@
+<% include ../partials/top %>
+
+<!-- blog edit form section -->
+<section id="edit-blog">
+	<!-- flash messages -->
+	<% if (error_msg && error_msg.length > 0) { %>
+	<div class="alert alert-danger" role="alert"><%= error_msg %></div>
+	<% } %>
+	<% if (success_msg && success_msg.length > 0) { %>
+	<div class="alert alert-success" role="alert"><%= success_msg %></div>
+	<% } %>
+	
+	<form id="edit-blog-form" action="/blogs/<%= blog._id %>?_method=put" method="post">
+		<div id="edit-blog-heading">
+			<h1>Edit blog <%= blog.title %></h1>
+		</div>
+
+		<div id="edit-blog-title">
+			<input type="text" name="title" class="form-control" value="<%= blog.title %>" required>
+		</div>
+
+		<div id="edit-blog-thumbnail">
+			<input type="text" name="thumbnail" class="form-control" value="<%= blog.thumbnail %>">
+		</div>
+
+		<div id="edit-blog-body">
+			<textarea name="body" class="form-control" rows="20" required><%= blog.body %></textarea>
+		</div>
+
+		<div id="edit-blog-tags">
+			<input type="text" name="tags" class="form-control" value="<%= blog.tags %>">
+		</div>
+
+		<div id="edit-blog-submit">
+			<button class="btn" type="submit">Submit</button>
+		</div>
+	</form>
+</section>
+
+<% include ../partials/bottom %>

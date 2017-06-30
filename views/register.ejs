@@ -1,0 +1,32 @@
+<% include partials/top %>
+
+<!-- register section -->
+<section id="register">
+	<!-- flash messages -->
+	<% if (error_msg && error_msg.length > 0) { %>
+	<div class="alert alert-danger" role="alert"><%= error_msg %></div>
+	<% } %>
+	<% if (success_msg && success_msg.length > 0) { %>
+	<div class="alert alert-success" role="alert"><%= success_msg %></div>
+	<% } %>
+	
+	<form action="/register" method="post">
+		<div id="register-heading">
+			<h1>Register</h1>
+		</div>
+		<div id="register-username">
+			<input type="text" name="username" class="form-control" placeholder="username" required>
+		</div>
+		<div id="register-email">
+			<input type="email" name="email" class="form-control" placeholder="email" required>
+		</div>
+		<div id="register-password">
+			<input type="password" name="password" class="form-control" placeholder="password" required>
+		</div>
+		<div id="register-submit">
+			<button class="btn" type="submit">Sign up!</button>
+		</div>
+	</form>
+</section>
+
+<% include partials/bottom %>

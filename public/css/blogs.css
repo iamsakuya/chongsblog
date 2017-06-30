@@ -1,0 +1,538 @@
+/*************************************************************************
+		general css
+**************************************************************************/
+
+html, body {
+	height: 100%;
+	font-family: "Roboto Condensed", sans-serif; 
+	color: #41464b;
+}
+
+a, a:hover, a:focus {
+	color: #41464b;
+	text-decoration: none;
+}
+
+textarea {
+	resize: none;
+}
+
+
+/*************************************************************************
+		nav bar
+**************************************************************************/
+
+#blogs-nav {
+	background: rgba(0, 0, 0, 0.65);
+}
+
+#nav-wrapper {
+	padding: 0 30px;
+}
+
+#nav-wrapper a {
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	-webkit-transition: 0.3s linear;
+	-o-transition: 0.3s linear;
+	transition: 0.3s linear;
+}
+
+#nav-wrapper a:hover, #nav-wrapper a:focus {
+	text-decoration: none;
+}
+
+#nav-wrapper .navbar-brand a {
+	font-size: 25px;
+	font-weight: 700;
+}
+
+#nav-wrapper .navbar-brand a:hover, #nav-wrapper .navbar-brand a:focus {
+	color: #34c6d3;
+}
+
+#nav-menu a:hover, #nav-menu a:focus {
+	background-color: #34c6d3;
+}
+
+
+/*************************************************************************
+		buttons (generic)
+**************************************************************************/
+
+.btn {
+	font-size: 16px;
+	background-color: #f7f7f7;
+	border: 1px solid #34c6d3;
+	border-radius: 0;
+	text-transform: uppercase;
+	padding: 7px;
+	-webkit-transition: 0.3s linear;
+	-o-transition: 0.3s linear;
+	transition: 0.3s linear;
+}
+
+.btn:hover, .btn:focus {
+	background-color: #34c6d3;
+	color: #f7f7f7;
+}
+
+
+/*************************************************************************
+		blogs cover background
+**************************************************************************/
+
+#blogs-cover {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../img/blogs-bg.jpg");
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/blogs-bg.jpg");
+	background-image: -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/blogs-bg.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/blogs-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: local;
+}
+
+
+/*************************************************************************
+		content-box (generic)
+**************************************************************************/
+
+.content-box {
+	min-width: 230px;
+	width: 65%;
+	padding: 35px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	background-color: #f7f7f7;
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+	        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+#blog-content-box, .blogs-show-content-box, 
+#comments-content-box, #new-comment-form-content-box {
+	width: 50%;
+}
+
+
+/*************************************************************************
+		flash messages
+**************************************************************************/
+
+#flash-msg-content-box {
+	padding: 0;
+	margin: 81px auto 0 auto;
+}
+
+.alert {
+	border-radius: 0;
+}
+
+
+/*************************************************************************
+		blogs: index welcome section
+**************************************************************************/
+
+#welcome-content-box {
+	margin-top: 81px;
+}
+
+#welcome-content-box>h1 {
+	font-size: 38px;
+	text-transform: uppercase;
+}
+
+#welcome-content-box>p {
+	font-size: 18px;
+}
+
+#new-blog-btn {
+	margin-right: 5px;
+}
+
+
+/*************************************************************************
+		blogs index: blogs section
+**************************************************************************/
+#blogs {
+	margin-bottom: 81px;
+}
+
+#blogs-content-box {
+	margin-bottom: 5px;
+}
+
+p#no-blogs-box {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+span#no-blogs-message {
+	margin-right: 20px;
+}
+
+span#no-blogs-create-link>a {
+	color: #3498db;
+}
+
+.blog {
+	height: 175px;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+.blog-image {
+	margin-right: 20px;
+	float: left;
+	height: 170px;
+	width: 170px;
+}
+
+.blog-image>img {
+	height: 100%;
+	width: 100%;
+}
+
+.blog-content {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	max-height: 170px;
+	margin: 0;
+}
+
+.blog-content-title {
+	margin: 0 0 0.5em 0;
+	font-size: 22px;
+	text-transform: capitalize;
+}
+
+.blog-content-body {
+	font-size: 16px;
+}
+
+
+.blog-content-body>a:hover, .blog-content-body>a:focus {
+	color: #3498db;
+}
+
+.blog-content-tags>h4, .blog-content-tags>span {
+	display: inline-block;
+}
+
+.blog-content-tags>h4 {
+	font-size: 16px;
+	margin-right: 5px;
+}
+
+.blog-content-tags>span {
+	margin-right: 5px;
+	font-size: 16px;
+	padding: 0;
+}
+
+hr.blog-seperator {
+	border: 0;
+	height: 1px;
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0)));
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+	background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+} 
+
+#blogs-pagination-content-box {
+	background: transparent;
+	border: none;
+	padding: 0;
+	margin: 0 auto;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	font-size: 16px;
+} 
+
+#blogs-pagination-content-box a, #blogs-pagination-content-box input {
+	margin-right: 5px;
+}
+
+#blogs-pagination-content-box a:last-child {
+	margin-right: 0;
+}
+
+#blogs-pagination-content-box input {
+	background-color: #f7f7f7;
+	border-radius: 0;
+	padding: 7px;
+	-webkit-transition: 0.3s linear;
+	-o-transition: 0.3s linear;
+	transition: 0.3s linear;
+	border: 1px solid #34c6d3;
+	width: 4em;
+}
+
+#search-options-wrapper .modal {
+	top: 100px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+#search-options-wrapper h4 {
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+#search-options .modal-content {
+	border-radius: 0 !important;
+}
+
+#search-options-wrapper .modal-body {
+	font-size: 17px;
+}
+
+/*************************************************************************
+		blogs new: new blog section, blogs show: blog section
+**************************************************************************/
+
+#new-blog, #edit-blog {
+	width: 65%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#new-blog-heading h1, #edit-blog-heading h1 {
+	font-size: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+#new-blog-form, #edit-blog-form {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#new-blog-form input, #new-blog-form textarea, 
+#edit-blog-form input, #edit-blog-form textarea {
+	padding: 20px;
+	font-size: 18px;
+	border-radius: 0;
+	background: #f7f7f7;
+	line-height: 120%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+#new-blog-form input:focus, #new-blog-form textarea:focus,
+#edit-blog-form input:focus, #edit-blog-form textarea:focus {
+	border: 1.3px solid #34c6d3;
+	outline: none;
+}
+
+#new-blog-form textarea, #edit-blog-form textarea {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#new-blog-form div, #edit-blog-form div {
+	margin-bottom: 20px;
+}
+
+#new-blog-submit, edit-blog-submit {
+	margin-bottom: 81px;
+}
+
+#new-blog-heading, #edit-blog-heading {
+	margin-top: 81px;
+	margin-bottom: 30px;
+}
+
+
+/*************************************************************************
+		blogs show: blog section
+**************************************************************************/
+
+#blog-content-box {
+	margin-top: 81px;
+}
+
+#blog-content-box p {
+	font-size: 17px;
+}
+
+#blog-title>h1 {
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.blog-conetent-date {
+	font-size: 15px;
+}
+
+#blog-body {
+	margin: 25px 0;
+	margin-bottom: 35px;
+	font-size: 17px;
+}
+
+#blog-create-time p {
+	text-align: center;
+}
+
+#blog-tags {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#blog-tags h4 {
+	display: inline-block;
+	font-size: 17px;
+	margin-right: 15px;
+}
+
+#blog-tags span {
+	font-size: 17px;
+	margin-right: 10px;
+}
+
+#blog-buttons {
+	text-align: center;
+}
+
+#blog-buttons a.btn {
+	margin-right: 15px;
+}
+
+
+/*************************************************************************
+		blogs show: comments section
+**************************************************************************/
+
+#comments p {
+	font-size: 16px;
+}
+
+.comment-delete-btn>button {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	background: #f7f7f7;
+	border: none;
+	font-size: 1.3em;
+	color: #e74c3c;
+	text-align: center;
+	-webkit-transition: 0.3s linear;
+	-o-transition: 0.3s linear;
+	transition: 0.3s linear;
+	opacity: 0;
+	width: 0;
+}
+
+.comment-delete-form>p:hover .comment-delete-btn>button {
+	opacity: 1;
+	width: 40px;
+}
+
+hr.comment-seperator {
+	border: 0;
+	height: 1px;
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.25)), color-stop(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0)));
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+	background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+}
+
+
+/*************************************************************************
+		blogs show: new comment form section
+**************************************************************************/
+
+#new-comment-form {
+	min-height: 1px;
+	margin-bottom: 80px;
+}
+
+#new-comment-form-content-box label {
+	font-size: 17px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	padding: 0;
+}
+
+textarea#new-comment-body {
+	border-radius: 0;
+	margin-bottom: 15px;
+	font-size: 17px;
+}
+
+
+/*************************************************************************
+		blogs show: prettyprint setup
+**************************************************************************/
+
+#blog-body .prettyprint {
+	font-size: 16px;
+	width: 80%;
+	margin: 25px auto;
+	border-radius: 0;
+}
+
+#blog-body li.L0, #blog-body li.L1, #blog-body li.L2, #blog-body li.L3,
+#blog-body li.L5, #blog-body li.L6, #blog-body li.L7, #blog-body li.L8 {
+	list-style-type: decimal !important;
+}
+
+
+/*************************************************************************
+		register and login form
+**************************************************************************/
+
+#register, #login {
+	width: 300px;
+	margin: 111px auto 81px  auto;
+}
+
+#register input, #login input {
+	font-size: 17px;
+	border-radius: 0;
+	padding: 10px 15px;
+	background-color: #f7f7f7;
+}
+
+#register input:focus, #login input:focus {
+	background-color: #fff;
+}
+
+#register-heading, #login-heading {
+	margin-bottom: 30px;
+}
+
+#register-heading h1, #login-heading h1 {
+	text-align: center;
+	color: #f7f7f7;
+	text-transform: uppercase;
+}
+
+#register-username, #register-email, #register-password, 
+#login-username, #login-email, #login-password {
+	margin-bottom: 15px;
+}
+
+#register-submit, #login-submit {
+	text-align: center;
+}

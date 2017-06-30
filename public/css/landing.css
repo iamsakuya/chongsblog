@@ -1,0 +1,440 @@
+/*************************************************************************
+		general css
+**************************************************************************/
+
+html, body {
+	height: 100%;
+	font-family: "Roboto Condensed", sans-serif; 
+	color: #41464b;
+}
+
+h1, h3 {
+	text-transform: uppercase;
+}
+
+
+/*************************************************************************
+		background parallax effect (generic)
+**************************************************************************/
+
+.bg-parallax {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+
+/*************************************************************************
+		buttons (generic)
+**************************************************************************/
+
+.btn-general {
+	text-transform: uppercase;
+	border-width: 2px;
+	padding: 12px 26px;
+	border-radius: 0;
+	font-weight: 400;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.btn-white {
+	border-color: #fff;
+	color: #fff;
+}
+
+.btn-white:hover, .btn-white:focus {
+	background-color: #fff;
+	color: #41464b;
+}
+
+.btn-blue {
+	border-color: #34c6d3;
+	color: #34c6d3;
+}
+
+.btn-blue:hover, .btn-blue:focus {
+	background-color: #34c6d3;
+	color: #fff;
+}
+
+.btn-back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 22px;
+	padding: 3px 15px;
+	border-radius: 0;
+	display: none;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+/*************************************************************************
+		animation (generic)
+**************************************************************************/
+
+.animate {
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+}
+
+
+/*************************************************************************
+		content-box (generic)
+**************************************************************************/
+
+.content-box {
+	padding: 60px 0;
+}
+
+.content-title h3 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	margin: 0 0 20px 0;
+}
+
+.content-title-white h3 {
+	color: #fff;
+}
+
+.content-title-underline {
+	width: 30px;
+	height: 2px;
+	background-color: #34c6d3;
+	margin: 0 auto 30px auto;
+}
+
+
+/*************************************************************************
+		nav bar
+**************************************************************************/
+
+.navbar {
+	padding: 20px 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+#top-nav {
+	padding: 7px 0;
+}
+
+.top-nav {
+	background: rgba(0, 0, 0, 0.3);
+}
+
+#nav-wrapper {
+	padding: 0 85px;
+}
+
+.navbar-nav {
+	float: right;
+}
+
+.navbar-brand {
+	color: #fff;
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+a.navbar-brand:hover, a.navbar-brand:focus {
+	color: #34c6d3;
+}
+
+.navbar-nav > li > a {
+	color: #fff;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+	color: #fff;
+	background: #34c6d3;
+}
+
+.navbar-toggle {
+	background-color: rgba(0, 0, 0, 0.1);
+	border: 1px solid #fff;
+	border-radius: 0;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+.navbar-collapse {
+	max-height: none !important;
+}
+
+#nav-menu li.active a {
+	color: #34c6d3;
+}
+
+#nav-menu li.active a:hover, #nav-menu li.active a:focus {
+	color: #fff;
+}
+
+
+/*************************************************************************
+		home section
+**************************************************************************/
+
+#home {
+	height: 100%;
+}
+
+#home-cover {
+	height: 100%;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../img/home-bg.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/home-bg.jpg");
+}
+
+#home-content-box {
+	height: 100%;
+	width: 100%;
+}
+
+#home-content {
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%); 
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #fff;
+}
+
+#home-heading h1 {
+	font-size: 55px;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+
+
+/*************************************************************************
+		skills section
+**************************************************************************/
+
+.skills {
+	width: 80%;
+	margin: 15px auto;
+}
+
+.skill-name {
+	float: left;
+	font-size: 19px;
+	font-weight: 400;
+}
+
+.skill-progress {
+	width: 70%;
+	float: right;
+}
+
+.skill-progress .progress-bar {
+	background-color: #34c6d3;
+}
+
+
+/*************************************************************************
+		education section
+**************************************************************************/
+
+#education-cover {
+	height: 100%;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/education-bg.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/education-bg.jpg");
+}
+
+#education-content {
+	font-size: 19px;
+	text-align: center;
+	color: #fff;
+}
+
+#education-school {
+	font-size: 25px;
+	font-weight: 700;
+}
+
+
+/*************************************************************************
+		projects section
+**************************************************************************/
+
+#projects-content-wrapper {
+	width: 55%;
+	margin: 0 auto;
+}
+
+.project-title {
+	font-size: 25px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.project-desc {
+	font-size: 18px;
+	text-align: justify;
+	margin-bottom: 30px;
+}
+
+.project-github {
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 30px;
+	line-height: 100%;
+}
+
+.project-github-label {
+	margin-right: 15px;
+}
+
+.project-github-label .fa-github {
+	font-size: 1.3em;
+}
+
+.project-keywords {
+	font-size: 18px;
+	text-align: center;
+}
+
+.project-keyword-label {
+	margin-right: 30px;
+}
+
+.project-keyword {
+	margin-left: 15px;
+}
+
+
+/*************************************************************************
+		contact section
+**************************************************************************/
+
+#contact {
+	background-color: #41464b;
+	padding-top: 30px;
+	padding-bottom: 60px;
+	border-top: 5px solid rgba(0, 0, 0, 0.1);
+	color: #fff;
+}
+
+#contact-left h3, #contact-right h3 {
+	font-size: 27px;
+	font-weight: 700;
+}
+
+#contact-left p {
+	margin-bottom: 30px;
+}
+
+#contact-info {
+	background-image: url("../img/contact-bg.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#contact-info address strong {
+	font-size: 16px;
+}
+
+#contact-info address strong, #phone-fax-email strong {
+	letter-spacing: 1px;
+}
+
+ul.social-list {
+	padding-left: 0;
+}
+
+.social-list li {
+	list-style: none;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin-right: 6px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.social-icon i {
+	font-size: 17px;
+}
+
+.icon-white i {
+	color: #fff;
+}
+
+.social-icon i:hover {
+	color: #34c6d3;
+}
+
+form .form-control {
+	background: transparent;
+	border-radius: 0;
+	border-color: #fff;
+	font-size: 17px;
+	font-weight: 300;
+	padding: 8px 16px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+form .btn-white {
+	background: transparent;
+} 
+
+
+/*************************************************************************
+		footer section
+**************************************************************************/
+
+footer {
+	background-color: #41464b;
+	color: #fff;
+}
+
+#footer-content {
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 30px 0;
+}
+
+#footer-copyright p {
+	margin: 0;
+}
+
+#footer-menu {
+	float: left;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+#footer-menu ul {
+	list-style: none;
+	padding-left: 8em;
+	margin: 0;
+}
+
+#footer-menu ul li {
+	display: inline-block;
+}
+
+#footer-menu ul li a {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0 10px;
+	text-decoration: none;
+}
+
+#footer-menu ul li a:hover {
+	color: #34c6d3;
+}

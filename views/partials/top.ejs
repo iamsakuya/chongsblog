@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- meta tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>CHONG'S BLOG</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="/img/favicon.png">
+
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+	
+	<!-- bootstrap css sheet -->
+	<link rel="stylesheet" type="text/css" href="/css/vendor/bootstrap.min.css">
+	<!-- font awesome css sheet -->
+	<link rel="stylesheet" type="text/css" href="/css/vendor/font-awesome.min.css">
+	<!-- prettyify.js css sheet -->
+	<link rel="stylesheet" type="text/css" href="/css/vendor/prettify.css">
+	<!-- custom css sheets -->
+	<link rel="stylesheet" type="text/css" href="/css/blogs.css">
+	<link rel="stylesheet" type="text/css" href="/css/blogs.responsive.css">
+</head>
+
+<body>
+<!-- background image cover div -->
+<div id="blogs-cover">
+</div>
+
+<!-- header -->
+<header>
+	<!-- nav bar -->
+	<nav class='navbar navbar-inverse navbar-fixed-top' id="blogs-nav">
+		<div class="container-fluid">
+			<div id="nav-wrapper">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-brand"><a class="open-in-new-window" href="/">Chong</a>
+					</div>
+				</div>
+				<div id="nav-menu" class="collapse navbar-collapse navbar-right">
+					<ul class="nav navbar-nav">
+						<li><a href="/blogs?page=1"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+						<% if (currentUser) { %>
+						<li><a><i class="fa fa-user" aria-hidden="true"></i> Login as <em><%= currentUser.name %></em></a></li>
+						<li><a href="/logout"><i class="fa fa-user-o" aria-hidden="true"></i> Logout</a></li>
+						<% } else { %>
+						<li><a href="/login"><i class="fa fa-user" aria-hidden="true"></i> Login</a></li>
+						<li><a href="/register"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a></li>
+						<% } %>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>

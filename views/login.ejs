@@ -1,0 +1,32 @@
+<% include partials/top %>
+<!-- register section -->
+<section id="login">
+	<!-- flash messages -->
+	<% if (error_msg && error_msg.length > 0) { %>
+	<div class="alert alert-danger" role="alert"><%= error_msg %></div>
+	<% } %>
+	<% if (success_msg && success_msg.length > 0) { %>
+	<div class="alert alert-success" role="alert"><%= success_msg %></div>
+	<% } %>
+	
+	<form action="/login" method="post">
+		<div id="login-heading">
+			<h1>Log in</h1>
+		</div>
+		<div id="login-username">
+			<input type="text" name="username" class="form-control" placeholder="username" required>
+		</div>
+		<!-- need to have this dummy input field otherwise passport-local-mongoose shows 'missing credentials error' -->
+		<div id="login-email">
+			<input type="hidden" name="email" class="form-control" value='email@email.com' required>
+		</div>
+		<div id="login-password">
+			<input type="password" name="password" class="form-control" placeholder="password" required>
+		</div>
+		<div id="register-submit">
+			<button class="btn" type="submit">Log me in !</button>
+		</div>
+	</form>
+</section>
+
+<% include partials/bottom %>

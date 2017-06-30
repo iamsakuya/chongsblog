@@ -1,0 +1,139 @@
+/* large devices */
+@media (min-width: 1200px) {
+	/* ok here */
+}
+
+
+/* medium devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.skill-progress {
+		width: 60%;
+	}
+}
+
+
+/* small devices */
+@media (min-width: 865px) and (max-width: 991px) {
+	#footer-copyright {
+		text-align: center;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 864px) {
+	.navbar {
+		background: rgba(0, 0, 0, 0.7);
+		padding: 0;
+	}
+	#nav-wrapper {
+		padding: 0;
+	}
+	ul.navbar-nav {
+		float: left;
+	}
+	#footer-copyright {
+		text-align: center;
+	}
+}
+
+
+/* extra small devices */
+@media (min-width: 415px) and (max-width: 767px) {
+	.navbar {
+		background: rgba(0, 0, 0, 0.7);
+		padding: 0;
+	}
+	#nav-wrapper {
+		padding: 0;
+	}
+	ul.navbar-nav {
+		float: left;
+	}
+	.skill-name {
+		height: 20px;
+		line-height: 20px;
+		margin-bottom: 20px;
+		clear: left;
+	}
+	.skill-progress {
+		width: 60%;
+		clear: right;
+	}
+	#home-heading h1 {
+		font-size: 35px;
+	}
+	.btn-general {
+		padding: 6px 22px;
+		font-size: 18px;
+	}
+	.project-github-label {
+		margin-right: 5px;
+	}
+	project-github-label .fa-github {
+		font-size: 1em;
+	}
+	.project-keyword-label {
+		margin-right: 5px;
+	}
+	project-keyword {
+		margin-left: 0;
+	}
+	#footer-copyright {
+		text-align: center;
+	}
+}
+
+
+/* small smart phones */
+@media (max-width: 414px) {
+	.navbar {
+		background: rgba(0, 0, 0, 0.7);
+		padding: 0;
+	}
+	#nav-wrapper {
+		padding: 0;
+	}
+	ul.navbar-nav {
+		float: left;
+	}
+	.skill-name {
+		float: none;
+	}
+	.skill-progress {
+		float: none;
+		width: 100%;
+	}
+	#home-heading h1 {
+		font-size: 24px;
+	}
+	.btn-general {
+		padding: 6px 22px;
+		font-size: 14px;
+	}
+	.project-title {
+		font-size: 20px;
+	}
+	.project-desc {
+		font-size: 15px;
+	}
+	.project-github {
+		font-size: 15px;
+	}
+	.project-github-label {
+		margin-right: 5px;
+	}
+	project-github-label .fa-github {
+		font-size: 1em;
+	}
+	.project-keywords {
+		font-size: 13px;
+	}
+	.project-keyword-label {
+		margin-right: 5px;
+	}
+	project-keyword {
+		margin-left: 0;
+	}
+	#footer-copyright {
+		text-align: center;
+	}
+}
