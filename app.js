@@ -115,6 +115,12 @@ app.use(function (err, req, res, next) {
  *		start express app
 ***********************************************************************/
 
-app.listen(3000, () => {
-	console.log('noteblog starts serving on port 3000 ...');
+app.listen(process.env.PORT || 3000, () => {
+	if (process.env.PORT) {
+		console.log('process.env.PORT available !');
+		console.log('noteblog starts serving on port ' + process.env.PORT + ' ...');
+	} else {
+		console.log('process.env.PORT not available.');
+		console.log('noteblog starts serving on port 3000 ...');
+	}
 });
